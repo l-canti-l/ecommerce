@@ -11,7 +11,8 @@ html {
     box-sizing: inherit;
 }
 
+
 @import 'layout';
 @import 'headernavbar';
-@import 'auth/signin.scss';
-@import 'auth/signup.scss';
+@import 'auth/signin';
+@import 'auth/signup';
