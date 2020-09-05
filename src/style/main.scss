@@ -1,4 +1,9 @@
 
+body {
+    font-family: "Open Sans";
+    color: #808080;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -17,3 +22,5 @@ html {
 @import 'auth/signin';
 @import 'auth/signup';
 @import 'page-title.scss';
+@import 'page-title';
+@import 'form-fields';
