@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import SignUpForm from './signupForm';
+import SignInForm from './signinForm';
 import PageTitle from '../pagetitle';
 
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
-class SignUp extends Component {
+class SignIn extends Component {
 
     componentDidMount() {
         this.props.setHeaderLinks([]);
@@ -19,14 +19,14 @@ class SignUp extends Component {
 
     render() {
         return (
-            <div className='sign-up'>
-                <PageTitle className='sign-up__page-title' title='Register' />
-                <SignUpForm onSubmit={this.onSubmit} className='sign-up__form' />
+            <div className='sign-in'>
+                <PageTitle className='sign-in__page-title' title='Login' />
+                <SignInForm onSubmit={this.onSubmit} className='sign-in__form' />
             </div>
         )
     }
 }
 
-SignUp = connect(null, actions)(SignUp);
+SignIn = connect(null, actions)(SignIn);
 
-export default SignUp;
+export default SignIn;
