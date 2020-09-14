@@ -22,7 +22,7 @@ export class FormButton extends Component {
     const { className, title, type, onClick, input, short } = this.props;
     return (
       <div className={`${className} form-button`}>
-        <label className="form-button__label">{title}</label>
+       
         <button
           className={`form-button__button ${short ? 'form-button__gray-button' : ""}`}
           type={type}
