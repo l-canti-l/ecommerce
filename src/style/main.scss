@@ -1,8 +1,4 @@
 
-body {
-    font-family: "Open Sans";
-    color: #808080;
-}
 
 html {
     font-size: 62.5%;
@@ -16,16 +12,27 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: "Open Sans";
+    color: #808080;
+}
+
 
 @import 'layout';
 @import 'headernavbar';
-@import 'auth/signin';
-@import 'auth/signup';
-@import 'page-title.scss';
 @import 'page-title';
 @import 'form-fields';
 @import 'details';
-@import 'account/purchase-history.scss';
-@import 'account/account-information.scss';
-@import "account/account.scss";
-@import "shop/shop.scss";
+
+// AUTH 
+@import 'auth/signin';
+@import 'auth/signup';
+
+// ACCOUNT
+@import 'account/account';
+@import 'account/purchase-history';
+@import 'account/account-information';
+
+// SHOP
+@import 'shop/shop';
+@import 'shop/shop-search-bar';
